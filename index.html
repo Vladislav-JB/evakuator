@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@1,700&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%23ff7a1a%27/%3E%3Cpath d=%27M6 20h14l3-5h3v5M9 23a2 2 0 1 0 0 .1M21 23a2 2 0 1 0 0 .1M6 20l8-8%27 stroke=%27%23140a02%27 stroke-width=%272.2%27 fill=%27none%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"AutomotiveBusiness","name":"Буксир","description":"Эвакуатор круглосуточно: подача от 20 минут, фиксированная цена до выезда.","url":"https://vladislav-jb.github.io/evakuator","image":"https://vladislav-jb.github.io/evakuator/assets/og.jpg","telephone":"+7 (900) 000-00-00","openingHours":"Mo-Su 00:00-24:00","priceRange":"от 1 500 ₽"}
@@ -346,6 +347,14 @@
   .messengers a { color: var(--v-ink); text-decoration: none; border: 1px solid rgb(255 255 255 / .16); border-radius: 99px; padding: 6px 14px; font-size: .88rem; }
   .messengers a:hover { border-color: var(--v-accent); color: var(--v-accent); }
   @media (max-width: 640px) { .order { grid-template-columns: 1fr; } }
+
+  /* подпись разработчика: «Создан в «Веб-Ателье»» */
+  .foot__made { display: inline-block; white-space: nowrap; font-style: italic; font-size: var(--v-t-sm); line-height: 1.4; color: var(--v-ink-soft); padding: .4em 0; }
+  .foot__made a { display: inline; margin: 0 0 0 .3em; color: inherit; text-decoration: none; font-family: Calibri, "Carlito", sans-serif; font-weight: 700; font-style: italic; font-size: 1.12em; }
+  .foot__made a:hover { color: var(--v-ink); text-decoration: underline; text-underline-offset: .18em; }
+  .foot__made img { display: inline-block; width: 40px; height: 52px; max-width: none; margin-left: .35em; vertical-align: -7px; }
+  .foot { align-items: center; }
+  @media (max-width: 860px) { .foot__made { font-size: 1rem; } }
 </style>
 </head>
 <body>
@@ -597,7 +606,8 @@
         </div>
         <footer class="foot">
           <span>Служба эвакуации «Буксир»</span>
-          <span class="foot__more">Фото: <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash</a> · демо-сайт, данные условные</span>
+          <span class="foot__more">Демо-сайт, данные условные</span>
+          <span class="foot__made">Создан в <a href="http://web-atelie.ru/" target="_blank" rel="noopener">«Веб-Ателье»</a><img src="assets/web-atelie.png" alt="" width="40" height="52" loading="lazy" decoding="async"></span>
         </footer>
       </div>
     </section>
